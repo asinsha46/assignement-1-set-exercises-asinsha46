@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="06-petrol calculator.css">
+    <title>Petrol calculator</title>
+</head>
+<body>
+    <!--start with a heading h1 for the main heading-->
+    <h1>Petrol calculator</h1>
+    <!--form tag to create an interactive form to take and give result to the user-->
+    <form name="form">
+        <p>Petrol cost per litre</p><!--this paragraph is notify user what to type in the below field-->
+        <!--here the user input an amount or default amount already set to 1.75-->
+        <!-- then it is taged by class to style the field in the css -->
+        <!-- it is also taged with an id to use this field for the calculation in the javascript -->
+        <input class="box1" id="Amount" value="1.72" type="number"placeholder="Enter Amount">
+        <p>Litres Purchased</p>
+        <!-- the same above process is repeated here-->
+        <input class="box2" id="Litre" value="0" type="number" placeholder="Enter Litre">
+        <br>
+        <br>
+        <!-- the button functions to view our answer when clicked.-->
+        <button class="button" onclick="Calculation()">Calculate</button>
+        <p>Total cost</p>
+        <!-- after all the calculation from the javascript is done then the answer is printed in this field-->
+        <input class="box3" type="number" name="Total">
+    </form>
+    <script src="06-petrol calculator.js"></script>
+</div>
+</body>
+</html>
